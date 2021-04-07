@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Organizer</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+       
+         <h1>Organizer</h1>
+         <br><h3>Set your username:</h3>
+        <form action="SetUsername" method="POST">
+            <p>Username:<input type=text size=20 name=username></p>
+            <input type="submit" value="Set" />
+        </form>
+         
+         <br><h3>Delete user:</h3>
+        <form action="DeleteOwnerServlet" method="POST">
+            <p>Username:<input type=text size=20 name=deleteusername></p>
+            <input type="submit" value="Delete" />
+        </form>
+         
+          <br><h3>Show all users:</h3>
+        <form action="ShowUsersServlet" method="POST">
+            <input type="submit" value="Show" />
+        </form>
+          
+            <br><h3>Edit your username: </h3>
+        <form action="EditUserServlet" method="POST">
+            <p>Old username:<input type=text size=20 name=olduser></p>
+            <p>New username:<input type=text size=20 name=newuser></p>
+            <input type="submit" value="Edit" />
+        </form>
+            
+   
+    </body>
+</html>
